@@ -291,7 +291,7 @@ input {
     }
 
     .container h1 {
-        font-size: 1.4rem;
+        font-size: 1.35rem;
     }
 
     input {
@@ -355,4 +355,5 @@ input {
         position: static;
         /* avoid overlap on small screens */
     }
+
 }
