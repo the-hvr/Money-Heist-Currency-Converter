@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Convertor</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+
+    <!--header-->
+    <header>
+        <div class="nav">
+            <div class="sidebar"><i class="fa-solid fa-bars"></i></div>
+            <div class="sidebar-content">
+                <span>Currency Code & Name :</span>
+            </div>
+            <div class="header">
+                <h2>Money Heist Currency Converter</h2>
+            </div>
+            <div class="socials">
+                <span>Follow us </span>
+                <a href="https://github.com/the-hvr"><i class="fa-brands fa-github"></i></a>
+                <a href="www.linkedin.com/in/the-hvr"><i class="fa-brands fa-linkedin"></i></a>
+            </div>
+        </div>
+    </header>
+
+
+    <!--main section-->
+    <main>
+        <div class="main-container">
+            <div class="container"> <!--main div / container -->
+                <h1>The House of Exchange</h1>
+                <form action="">
+                    <input value="" type="text" placeholder="Amount to launder...">
+                </form>
+
+                <div class="dropdown-container">
+                    <!--from dropdown-->
+                    <div class="dropdown">
+                        <p>From</p>
+                        <div class="select-container">
+                            <img class="image" src="https://flagsapi.com/US/flat/64.png">
+                            <select name="from" id="from"></select>
+                        </div>
+                    </div>
+
+                    <div class="icon">
+                        <i class="fa-solid fa-arrow-right-arrow-left"></i>
+                    </div>
+
+                    <!--to dropdown-->
+                    <div class="dropdown">
+                        <p>To</p>
+                        <div class="select-container">
+                            <img class="image" src="https://flagsapi.com/IN/flat/64.png">
+                            <select name="to" id="to"></select>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <!--result-->
+                    <form action="">
+                        <input id="final-val" value="" type="text" placeholder="Your loot !" readonly>
+                    </form>
+                    <p id="date-msg"> </p>
+                </div>
+
+                <div class="buttons">
+                    <button class="btn">Rob the rates </button>
+                    <button class="reset">Clear the Vault</button>
+                </div>
+
+                <div class="note">
+                    <p>"Convert like The Professor, spend like Berlin"</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!--mobile responsive img-->
+    <div class="img"></div>
+
+
+    <!--footer-->
+    <footer>
+        <div class="footer-container">
+            <p>&copy; 2025 Money Heist Currency Converter</p>
+            <p>All rates are for learning & fun — not for real heists.</p>
+            <p class="tagline">Keep your conversions clean, even if your heist isn't.</p>
+        </div>
+    </footer>
+
+
+    <!--axios library cdn-->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="info.js"></script>
+    <script src="code.js"></script>
+    <script src="app.js"></script>
+
+</body>
+
+</html>
